@@ -36,6 +36,7 @@
             this.openToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saveAsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.saveFileDialog2 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMyImage)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -47,6 +48,9 @@
             this.pictureBoxMyImage.Size = new System.Drawing.Size(633, 423);
             this.pictureBoxMyImage.TabIndex = 0;
             this.pictureBoxMyImage.TabStop = false;
+            this.pictureBoxMyImage.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pictureBoxMyImage_MouseDown);
+            this.pictureBoxMyImage.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBoxMyImage_MouseMove);
+            this.pictureBoxMyImage.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBoxMyImage_MouseUp);
             // 
             // openFileDialog2
             // 
@@ -123,6 +127,7 @@
         private System.Windows.Forms.ToolStripMenuItem openToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem saveAsToolStripMenuItem;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog2;
     }
 }
 
